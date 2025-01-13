@@ -1,1 +1,159 @@
 
+
+
+        /* Styles for Webpage testing */
+
+
+
+
+
+        /* Default Buttons */                                                                  /* Default Buttons */                                                                        /* Default Buttons */
+
+        .Border-gap-button-white {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap:2vh;
+            width: auto;
+            min-height: 100%;
+            min-width: 100%;
+        }
+        .Border-gap-button-white a {
+            background-color: rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
+            position: relative;
+            text-decoration: none !important;
+            text-transform: uppercase;
+            font-size: 20px;
+            padding: 10px 25px;
+            transition: 0.5s ease;
+            --clr: #fe109e; 
+            border-radius: 20px;
+            border-top-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: auto;
+            height: auto;
+            min-width: 80px;
+            min-height: 20px;
+        }
+
+        .Border-gap-button-white a:hover {
+            font-size: 20px;
+            background: var(--clr);
+            color: #ffffff;
+            box-shadow: 0 0 35px var(--clr);
+            cursor: pointer;
+            transform: translateX(-50px);
+        }
+
+        .Border-gap-button-white a:before {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            background-color: rgb(0, 53, 68);
+            border-radius: 20px;
+            border-top-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .Border-gap-button-white a span {
+            position: relative;
+            z-index: 1;
+        }
+
+
+        /* Button Descriptions */                                                              /* Button Descriptions */                                                                    /* Button Descriptions */
+
+        .hidden-description {
+            Display: none;
+            background-color: transparent;
+            color: white;
+            position:absolute;
+            top: 0;
+            left: 108%;
+            margin-left: 14px;
+            font-size: 14px;
+            width:max-content;
+            height: auto;
+        }
+
+        .Border-gap-button-white a:hover .hidden-description {
+            display: inline;
+            border:2px solid white;
+            padding: 35px 25px;
+            border-radius: 20px;
+            border-top-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            z-index: 10;
+            background-color: rgb(0, 53, 68);
+            text-decoration: none;
+        }
+
+        /* Images */                                                                                    /* Images */                                                                                   /* Images */
+
+        .hm-onlineshop-img{
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            width: 5vw;
+            height: 20vh;
+        }
+
+        img {
+            width:100%;
+            height:100%;
+        }
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Button Styles.css">
+    <title>JMP Homepage Block 01</title>
+</head>
+
+<body>
+    <div class="Border-gap-button-white">
+        <div class="Border-gap-button-white">
+            <a href="https://www.johnmeinert.com/photobooks/" style="--clr:#fe109e">
+                <span>Design your own photobook</span>
+                <div class="hidden-description">
+                    <span>Download our Software and create 
+                        <br>your own Photobooks and Calendars.</span>
+                </div>
+            </a>
+        </div>
+        <div class="Border-gap-button-white a">
+            <a href="https://www.johnmeinert.com/contact-us/" style="--clr:#fe109e">
+                <span>Get an individual quote</span>
+                <div class="hidden-description">
+                    <span>We print Books, Magazines, Flyers,
+                        <br>Posters, Registers and much more.
+                        <br>Contact our estimators to get a quote
+                        <br>for your individual specifications.</span>
+                </div>
+            </a>
+        </div>
+        <div class="Border-gap-button-white a">
+            <a href="https://jmp-printshop.com/" style="--clr:#fe109e">
+                <span>Online Shop</span>
+                <div class="hidden-description">
+                    <span>Visit our online shop to 
+                        <br> design and order a selected
+                        <br>range of products online.</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
